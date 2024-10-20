@@ -3,7 +3,7 @@ import numpy as np
 import time
 
 
-def areFramesDuplicates(frame1, frame2, threshold=1.0, percentage=0.95):
+def calcOpticalFlowFarneback(frame1, frame2, threshold=1.0, percentage=0.95):
     # Needs to be grayscale, also should be more performant this way
     gray1 = cv2.cvtColor(frame1, cv2.COLOR_BGR2GRAY)
     gray2 = cv2.cvtColor(frame2, cv2.COLOR_BGR2GRAY)
@@ -27,7 +27,7 @@ if __name__ == "__main__":
     frame2 = cv2.imread(r"G:\TheAnimeScripter\input\frame2.png")
 
     startTime = time.time()
-    result, value = areFramesDuplicates(frame1, frame2)
+    result, value = calcOpticalFlowFarneback(frame1, frame2)
     endTime = time.time()
     print(f"Prediction Value: {value}")
 
