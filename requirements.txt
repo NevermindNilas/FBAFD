@@ -1,0 +1,3 @@
+opencv-python-headless
+numpy
+# torch, torchvision - for cuda, Proof of concept for now.
