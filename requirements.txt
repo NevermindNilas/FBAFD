@@ -1,3 +1,4 @@
 opencv-python-headless
 numpy
+tqdm
 # torch, torchvision - for cuda, Proof of concept for now.
